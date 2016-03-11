@@ -1,0 +1,21 @@
+$layout_background_color: #f3ebe5;
+$layout_box_shadow_color: rgba(0, 0, 0, .75);
+
+.layout-wrap {
+  background-color: $layout_background_color;
+  box-shadow: 0 0 18px -2px $layout_box_shadow_color;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 960px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+@import 'layout/header';
+@import 'layout/footer';
+
+.layout-content {
+  flex-grow: 1;
+}

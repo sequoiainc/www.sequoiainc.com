@@ -1,0 +1,140 @@
+$home_career_heading_color: #776f64;
+$home_container_color: #313131;
+
+.home-wrap {
+  @include content_padding;
+  padding-top: 16px;
+
+  p {
+    margin: 0 0 12px;
+  }
+}
+
+.home-team {
+  margin-bottom: 20px;
+}
+
+.home-team_heading {
+  @include heading('20px / 23px');
+  margin: 0 0 10px;
+}
+
+.home-team_learn_more {
+  float: right;
+  text-decoration: none;
+}
+
+.home-team_random_image {
+  @include image_border(15px, 12px);
+  @include container_box_shadow;
+
+  height: auto;
+  margin: 6px 0 6px 15px;
+  width: 214px;
+}
+
+.home-team_video_wrap {
+  position: relative;
+}
+
+.home-team_play_link {
+  background: image_url('btn.png') no-repeat 0 -79px;
+  cursor: pointer;
+  font-size: 0;
+  height: 45px;
+  left: 101px;
+  line-height: 0;
+  overflow: hidden;
+  position: absolute;
+  text-decoration: none;
+  text-indent: -9999px;
+  top: 80px;
+  width: 45px;
+}
+
+.home-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding-bottom: 17px;
+
+  @media(min-width: 980px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.home-life {
+  @media(min-width: 930px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.home-life_heading_wrap {
+  @include heading_wrap;
+}
+
+.home-life_heading {
+  @include heading_with_background('20px / 23px');
+}
+
+.home-careers_wrap {
+  @include container;
+  color: $home_container_color;
+  margin-bottom: 17px;
+  padding: 10px;
+
+  @media(min-width: 930px) {
+    margin-right: 5px;
+    width: calc(50% - 5px);
+  }
+}
+
+.home-careers_header {
+  @include container_header;
+}
+
+.home-careers {
+  @media(min-width: 930px) {
+    max-height: 460px;
+    overflow: auto;
+  }
+}
+
+.home-careers_heading {
+  @include container_heading;
+}
+
+.home-careers_view_all {
+  font-size: 10px;
+  line-height: 13px;
+  padding: 0 5px 0 0;
+  text-decoration: none;
+}
+
+.home-career_heading {
+  @include heading('20px / 23px', $home_career_heading_color);
+  display: block;
+  margin: 0 0 5px;
+}
+
+.home-career_wrap {
+  margin-bottom: 31px;
+}
+
+.home-career_link {
+  text-decoration: none;
+}
+
+.home-tweets_wrap {
+  @include container;
+  color: $home_container_color;
+  margin-bottom: 17px;
+  padding: 10px;
+
+  @media(min-width: 930px) {
+    margin-left: 5px;
+    width: calc(50% - 5px);
+  }
+}

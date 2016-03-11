@@ -1,0 +1,77 @@
+$careers_title_color: #776f64;
+
+.careers-wrap {
+  @include content_padding;
+}
+
+.careers-join_heading_wrap {
+  @include heading_wrap;
+}
+
+.careers-join_heading {
+  @include heading_with_background('20px / 23px');
+}
+
+.careers-container {
+  @include container;
+  margin: 10px 0 20px;
+  padding: 11px 19px;
+
+  p {
+    margin: 0 0 10px;
+  }
+}
+
+.careers-container_header {
+  @include container_header;
+}
+
+.careers-container_heading {
+  @include container_heading;
+}
+
+.careers-back {
+  font-size: 10px;
+  line-height: 13px;
+  text-decoration: none;
+}
+
+.careers-submit {
+  background: url(#{$baseurl}/assets/images/btn.png) no-repeat 0 -278px;
+  float: right;
+  font-size: 10px;
+  line-height: 13px;
+  margin: -2px 0 0;
+  padding: 3px 16px 4px 23px;
+  text-decoration: none;
+}
+
+.careers-title {
+  color: $careers_title_color;
+  font: 15px / 18px GothamMedium, Arial, Helvetica, sans-serif;
+  margin: 0 0 1px;
+  padding: 15px 10px 15px 0;
+  text-transform: none;
+}
+
+.careers-list_item_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.careers-list_item_heading {
+  color: $careers_title_color;
+  font: 15px/18px GothamMedium, Arial, Helvetica, sans-serif;
+  margin: 0 0 1px;
+  text-transform: none;
+}
+
+.careers-list_item_wrap {
+  background: image_url('bg-job-info.png') repeat-x;
+  padding: 11px 0 10px 5px;
+
+  &:first-child {
+    background: none;
+    padding: 2px 0 9px 5px;
+  }
+}

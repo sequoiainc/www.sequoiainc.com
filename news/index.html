@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="news-wrap">
+  <div class="news-heading_wrap">
+    <h2 class="news-heading">Sequoia in the News</h2>
+  </div>
+  <div class="news-container">
+    {% assign sorted_news = site.news | sort:"date" %}
+    <div class="news-list">
+      {% for news in sorted_news reversed %}
+        <div class="news-list_item">
+          <div class="news-list_item_date">{{ news.date | date: '%B %d, %Y' }}</div>
+          <a href="{{ site.baseurl }}{{ news.url }}" class="news-link">{{ news.title }}</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% include map.html %}
+</div>
+

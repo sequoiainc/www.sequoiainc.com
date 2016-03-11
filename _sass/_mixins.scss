@@ -1,0 +1,77 @@
+@mixin content_padding {
+  padding: 0 25px 20px;
+}
+
+@mixin heading_wrap {
+  background: image_url('bg-title.png') repeat-x 50% 50%;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+@mixin heading($size, $color: null) {
+  $color: if($color, $color, $heading_color);
+
+  color: #{$color};
+  display: inline-block;
+  font: #{$size} $font_family_sans;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+@mixin heading_with_background($size) {
+  @include heading($size);
+
+  $background_color: #f1ece5;
+
+  background: $background_color;
+  padding: 0 3px;
+}
+
+@mixin container_box_shadow {
+  $box_shadow_color: rgba(0, 0, 0, .2);
+
+  box-shadow: 0 0 15px 0 $box_shadow_color;
+}
+
+@mixin clear_fix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+@mixin image_border($width, $border_radius) {
+  $image_border_color: #fff;
+
+  border: solid #{$width} $image_border_color;
+  border-radius: $border_radius;
+}
+
+@mixin container {
+  $container_background_color: #f8f3f4;
+
+  @include container_box_shadow;
+
+  background-color: $container_background_color;
+  border-radius: 6px;
+}
+
+@mixin container_header {
+  background: image_url('bg-heading-block.png') repeat-x 0 100%;
+  color: $sub_heading_color;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px;
+  overflow: hidden;
+  padding: 3px 5px 10px 3px;
+  text-align: left;
+}
+
+@mixin container_heading {
+  @include heading('15px /18px', $sub_heading_color);
+  margin: 0;
+}

@@ -1,0 +1,19 @@
+.by_the_numbers-wrap {
+  @include content_padding;
+  text-align: center;
+}
+
+.by_the_numbers-heading_wrap {
+  @include heading_wrap;
+}
+
+.by_the_numbers-heading {
+  @include heading_with_background('20px / 23px');
+}
+
+.by_the_numbers-image {
+  height: auto;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}

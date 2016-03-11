@@ -1,0 +1,104 @@
+$life_at_sequoia_avatar_box_shadow_color: #888;
+$life_at_sequoia_rule_start_color: rgba(0, 0, 0, 0);
+$life_at_sequoia_rule_middle_color: rgba(0, 0, 0, .75);
+$life_at_sequoia_rule_end_color: rgba(0, 0, 0, 0);
+
+.life_at_sequoia-wrap {
+  @include content_padding;
+
+  p {
+    margin: 0 0 8px;
+  }
+}
+
+.life_at_sequoia-heading_wrap {
+  @include heading_wrap;
+}
+
+.life_at_sequoia-heading {
+  @include heading_with_background('20px / 23px');
+}
+
+.life_at_sequoia-sub_heading {
+  @include heading('15px / 18px', $sub_heading_color);
+  margin-bottom: 0;
+}
+
+.life_at_sequoia-status_quo_image {
+  @include container_box_shadow;
+  @include image_border(5px, 6px);
+  float: left;
+  height: auto;
+  margin: 14px 14px 40px 0;
+  width: 45%;
+
+  @media(max-width: 440px) {
+    margin-bottom: 14px;
+    width: 100%;
+  }
+}
+
+.life_at_sequoia-our_culture_image {
+  @include container_box_shadow;
+  @include image_border(5px, 6px);
+  float: right;
+  height: auto;
+  margin: 14px 0 40px 14px;
+  width: 45%;
+
+  @media(max-width: 440px) {
+    margin-bottom: 14px;
+    width: 100%;
+  }
+}
+
+.life_at_sequoia-avatar {
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px $life_at_sequoia_avatar_box_shadow_color;
+  height: auto;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.life_at_sequoia-testimonial_heading_wrap {
+  @include heading_wrap;
+  margin-top: 20px;
+}
+
+.life_at_sequoia-testimonial {
+  align-items: center;
+  display: flex;
+  font-size: 1.4em;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  vertical-align: middle;
+  width: 95%;
+
+  blockquote {
+    flex-basis: 100%;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.life_at_sequoia-avatar_wrap {
+  flex-basis: 20%;
+  text-align: center;
+
+  &.left {
+    margin-right: 20px;
+  }
+
+  &.right {
+    margin-left: 20px;
+    order: 2;
+  }
+}
+
+.life_at_sequoia-rule {
+  background-image: linear-gradient(to left, $life_at_sequoia_rule_start_color, $life_at_sequoia_rule_middle_color, $life_at_sequoia_rule_end_color); // scss-lint:disable NameFormat
+  border: 0;
+  height: 1px;
+  margin-bottom: 20px;
+}

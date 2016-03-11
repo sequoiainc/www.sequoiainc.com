@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<div class="home-wrap">
+  <div class="home-main">
+    <div class="home-team">
+      <h2 class="home-team_heading">Team Sequoia</h2>
+      <p>Sequoia is an award-winning, employee-owned provider of high-end software development and engineering services centered on improving the analytic, collection, collaboration and sharing of data.</p>
+      <p>Sequoia provides engineering and analytic solutions to the national security sector, including the US intelligence, defense and homeland security communities.</p>
+      <a class="home-team_learn_more" href="http://www.sequoiainc.com/team-sequoia/">Learn more »</a>
+    </div>
+    <div class="random home-team_random_wrap">
+      <a href="{{ site.baseurl }}/what-we-do/"><img width="184" height="151" src="{{ site.baseurl }}/assets/images/Sequoia_ML-184x151-AWS.jpg" class="home-team_random_image" alt="box1" /></a>
+      <a href="{{ site.baseurl }}/what-we-do/"><img width="184" height="151" src="{{ site.baseurl }}/assets/images/bdata.jpg" class="home-team_random_image" alt="box1" /></a>
+      <a href="{{ site.baseurl }}/what-we-do/"><img width="184" height="151" src="{{ site.baseurl }}/assets/images/aa-184x151.jpg" class="home-team_random_image" alt="box1" /></a>
+      <a href="{{ site.baseurl }}/what-we-do/"><img width="184" height="151" src="{{ site.baseurl }}/assets/images/hsd-184x151.jpg" class="home-team_random_image" alt="box1" /></a>
+    </div>
+    <div class="random2 home-team_random_wrap">
+      <a href="{{ site.baseurl }}/what-we-do/"><img width="184" height="151" src="{{ site.baseurl }}/assets/images/et-184x151.jpg" class="home-team_random_image" alt="box2" /></a>
+      <a href="{{ site.baseurl }}/what-we-do/"><img width="184" height="151" src="{{ site.baseurl }}/assets/images/intel-184x151.jpg" class="home-team_random_image" alt="box2" /></a>
+      <a href="{{ site.baseurl }}/what-we-do/"><img width="184" height="151" src="{{ site.baseurl }}/assets/images/cyber-184x151.jpg" class="home-team_random_image" alt="box2" /></a>
+    </div>
+    <div class="home-team_video_wrap">
+      <img src="{{ site.baseurl }}/assets/images/img4.jpg" alt="image description" width="184" height="151" class="home-team_random_image" />
+      <a class="home-team_play_link" href="http://www.youtube.com/watch?v=HJjTBDTmH08&amp;feature=player_embedded#at=41">play</a>
+    </div>
+  </div>
+  {% include map.html %}
+  <div class="home-life">
+    <div class="home-life_heading_wrap">
+      <h2 class="home-life_heading">Life at Sequoia</h2>
+    </div>
+    <div class="home-careers_wrap">
+      <div class="home-careers_header">
+        <h2 class="home-careers_heading">Careers</h2>
+        <a class="home-careers_view_all" href="{{ site.baseurl }}/careers">View All Job Openings »</a>
+      </div>
+      <div class="home-careers">
+        {% assign sorted_careers = site.careers | sort:"title" %}
+        {% for career in sorted_careers %}
+          <div class="home-career_wrap">
+            <h3 class="home-career_heading">{{career.title}}</h3>
+            {{ career.content | strip_html | truncatewords:55 }}
+            <a href="{{ site.baseurl }}{{ career.url }}" class="home-career_link">Apply Now&nbsp;»</a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="home-tweets_wrap">
+      <a class="twitter-timeline" href="https://twitter.com/sequoiainc" data-widget-id="370311685870858240" data-chrome=" nofooter transparent noheader" height="499px">Tweets by @sequoiainc</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.submit_resume-wrap {
+  @include content_padding;
+}
+
+.submit_resume-heading_wrap {
+  @include heading_wrap;
+}
+
+.submit_resume-heading {
+  @include heading_with_background('20px / 23px');
+}

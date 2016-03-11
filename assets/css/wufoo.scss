@@ -1,0 +1,117 @@
+---
+---
+
+@font-face{
+  font-family:'GothamBold';
+  src:url('{{ site.baseurl}}/assets/fonts/gotham_bold.eot');
+  src:url('{{ site.baseurl}}/assets/fonts/gotham_bold.eot?#iefix') format('embedded-opentype'),
+    url('{{ site.baseurl}}/assets/fonts/gotham_bold.woff') format('woff'),
+    url('{{ site.baseurl}}/assets/fonts/gotham_bold.ttf') format('truetype'),
+    url('{{ site.baseurl}}/assets/fonts/gotham_bold.svg#gotham-bold') format('svg');
+}
+
+@font-face{
+  font-family:'JustDucky';
+  src:url('{{ site.baseurl}}/assets/fonts/justducky.eot');
+  src:url('{{ site.baseurl}}/assets/fonts/justducky.eot?#iefix') format('embedded-opentype'),
+    url('{{ site.baseurl}}/assets/fonts/justducky.woff') format('woff'),
+    url('{{ site.baseurl}}/assets/fonts/justducky.ttf') format('truetype'),
+    url('{{ site.baseurl}}/assets/fonts/justducky.svg#justducky') format('svg');
+}
+
+html.embed {
+  background-color: inherit;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.wufoo ul {
+  display: flex;
+  flex-direction: column;
+
+  @media(min-width: 800px) {
+    display: block;
+  }
+}
+
+.wufoo label.desc {
+  font-family: 'GothamBold';
+}
+
+.wufoo .submit {
+  font-family: 'JustDucky';
+  color: #fff;
+  background-color: #0b9444;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px;
+  text-transform: uppercase;
+  float: right;
+}
+
+form li.leftHalf, form li.rightHalf {
+    width: 49% !important;
+}
+
+.wufoo ul li {
+  &:nth-child(2) {
+    order: 1;
+  }
+
+  &:nth-child(4) {
+    order: 2;
+  }
+
+  &:nth-child(1) {
+    order: 3;
+  }
+
+  &:nth-child(3) {
+    order: 4;
+  }
+
+  &:nth-child(5) {
+    order: 5;
+  }
+
+  &:nth-child(6) {
+    order: 6;
+  }
+
+  &:nth-child(7) {
+    order: 7;
+  }
+
+  @media(max-width: 800px) {
+    width: 100% !important;
+  }
+}
+
+#form2.wufoo ul li {
+  &:nth-child(1) {
+    order: 1;
+  }
+
+  &:nth-child(3) {
+    order: 2;
+  }
+
+  &:nth-child(5) {
+    order: 3;
+  }
+
+  &:nth-child(2) {
+    order: 4;
+  }
+
+  &:nth-child(4) {
+    order: 5;
+  }
+
+  &:nth-child(6) {
+    order: 6;
+  }
+}

@@ -1,0 +1,25 @@
+exclude: [vendor]
+
+baseurl: /sequoiainc
+
+collections:
+  careers:
+    output: true
+    permalink: /careers/:path/
+  news:
+    output: true
+    permalink: /news/:title/
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: careers
+    values:
+      layout: careers
+  -
+    scope:
+      path: ''
+      type: news
+    values:
+      layout: news

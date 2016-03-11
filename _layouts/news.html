@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="news-wrap">
+  <div class="news-heading_wrap">
+    <h2 class="news-heading">Sequoia in the News</h2>
+  </div>
+  <div class="news-container">
+    <a class="news-back" href="/{{ site.baseurl }}news/"> &laquo Back to All News</a>
+    {{ page.date | date: '%B %d, %Y' }}
+    <h4 class="news-title">{{ page.title }}</h4>
+    {{ page.content | markdownify }}
+  </div>
+  {% include map.html %}
+</div>

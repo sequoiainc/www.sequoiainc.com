@@ -1,0 +1,44 @@
+$community_list_item_color: #776f64;
+
+.community-wrap {
+  @include content_padding;
+}
+
+.community-heading_wrap {
+  @include heading_wrap;
+}
+
+.community-heading {
+  @include heading_with_background('20px / 23px');
+}
+
+.community-container {
+  @include container;
+  margin: 20px 0;
+  padding: 11px 19px;
+
+  p {
+    margin: 0 0 10px;
+  }
+}
+
+.community-container_header {
+  @include container_header;
+}
+
+.community-container_heading {
+  @include container_heading;
+}
+
+.community-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.community-list_item {
+  @include heading('20px / 23px', $community_list_item_color);
+  display: block;
+  margin: 0 15px 0 0;
+  padding: 5px 0;
+}

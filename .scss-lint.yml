@@ -1,0 +1,11 @@
+scss_files: '_sass/**/*.scss'
+
+exclude: '_sass/_okayNav.scss'
+
+linters:
+  MergeableSelector:
+    force_nesting: false
+  NameFormat:
+    convention: snake_case
+  SelectorFormat:
+    convention: ^[a-z_]+\-?[a-z_]*$

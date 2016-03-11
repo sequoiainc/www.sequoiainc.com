@@ -1,0 +1,43 @@
+.contact_us-wrap {
+  @include content_padding;
+}
+
+.contact_us-heading_wrap {
+  @include heading_wrap;
+}
+
+.contact_us-heading {
+  @include heading_with_background('20px / 23px');
+}
+
+.contact_us-office_wrap {
+  padding-bottom: 20px;
+
+  @media(min-width: 960px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contact_us-office {
+  @include heading('15px / 18px', $sub_heading_color);
+  margin: 0 0 14px;
+}
+
+.contact_us-map {
+  @include container_box_shadow;
+  @include image_border(4px, 6px);
+  border-bottom-width: 15px;
+  padding-bottom: 75%;
+  position: relative;
+
+  iframe {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  @media(min-width: 960px) {
+    width: 65%;
+  }
+}

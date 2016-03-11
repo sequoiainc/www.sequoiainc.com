@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<div class="careers-wrap">
+  <div class="careers-join_heading_wrap">
+    <h2 class="careers-join_heading">Join our team</h2>
+  </div>
+  <div class="careers-container">
+    <div class="careers-container_header">
+      <h2 class="careers-container_heading">Our Benefits</h2>
+    </div>
+    <p>
+      Sequoia believes that our strength is in our employees.  And we are totally committed to providing the best possible culture and environment where our employees can grow personally as well as into the technical leaders of tomorrow.  We understand that offering the most comprehensive benefits package for our employees and their families will help our staff achieve a productive balance between work and life outside the office.
+    </p>
+    <ul>
+      <li style="font-weight:bold">Company Ownership via the Sequoia Employee Stock Option Program</li>
+      <li>Strong and Competitive Salary (w/ Paid Overtime)</li>
+      <li>Up to 5% Semi-Annual Performance Based Bonuses</li>
+      <li>10% 401k Retirement Plan & Profit Sharing Contribution (100% Fully Vested - No Match Required)</li>
+      <li>100% Company Funded Medical/Dental/Vision Insurance (w/ Upgrade Options)</li>
+      <li>100% Company Funded Short/Long Term Disability Coverage + Life Insurance</li>
+      <li>Up to 7 Weeks Paid Time Off (PTO) including 10 Federal Holidays and your Birthday!</li>
+      <li>Up to $10,000 employee referral bonuses - Plus an additional $10k bonus for every third new hire!</li>
+      <li>Overhead Allowance for Jury Duty, Military Duty and Bereavement Leave</li>
+      <li>Government Shutdown Protection</li>
+      <li>Education and Training Allowance w/ Overhead Time Coverage</li>
+      <li>Sequoia Internal Training Program</li>
+      <li>Annual Technical Book/Software Allowance</li>
+      <li>Annual Internet/Cell Phone Allowance</li>
+      <li>Annual Employee Wellness Allowance</li>
+      <li>New iPad on Start Date</li>
+      <li>$2,500 Computer Purchase Allowance</li>
+      <li>Fantastic Team Sequoia Parties and Team Building Activities</li>
+      <li>Ownership and Participation with <a href="http://www.sequoia-apps.com/">Sequoia Apps, LLC</a></li>
+    </ul>
+  </div>
+  {% include map.html %}
+  <div class="careers-container">
+    <div class="careers-container_header">
+      <h2 class="careers-container_heading">Our Current Jobs</h2>
+      <a class="careers-submit" href="{{ site.baseurl }}/submit-resume/">Submit Your Resume</a>
+    </div>
+    {% assign sorted_careers = site.careers | sort:"title" %}
+    <div class="careers-list">
+      {% for career in sorted_careers %}
+        <div class="careers-list_item_wrap">
+          <div class="careers-list_item_header">
+            <h3 class="careers-list_item_heading">{{career.title}}</h3>
+            <a href="{{ site.baseurl }}{{ career.url }}" class="careers-list_item_link">Show Full Listing »</a>
+          </div>
+          <p>{{ career.content | strip_html | truncatewords:54 }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+

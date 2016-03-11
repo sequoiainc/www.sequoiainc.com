@@ -1,0 +1,110 @@
+$team_sequoia_meet_employee_owned_heading_color: #776f64;
+
+.team_sequoia-wrap {
+  @include content_padding;
+}
+
+.team_sequoia-heading_wrap {
+  @include heading_wrap;
+}
+
+.team_sequoia-heading {
+  @include heading_with_background('20px / 23px');
+}
+
+.team_sequoia-meet_container {
+  @include container;
+  @include clear_fix;
+  margin: 0 0 20px;
+  padding: 11px 19px 19px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.team_sequoia-meet_header {
+  @include container_header;
+}
+
+.team_sequoia-meet_heading {
+  @include container_heading;
+}
+
+.team_sequoia-meet_join {
+  color: $sub_heading_color;
+  font-size: 10px;
+  line-height: 13px;
+  padding: 0 5px 0 0;
+  text-decoration: none;
+}
+
+.team_sequoia-meet_employee_owned_heading {
+  @include heading('20px / 23px', $team_sequoia_meet_employee_owned_heading_color);
+  margin: 0;
+}
+
+.team_sequoia-meet_image {
+  @include container_box_shadow;
+  @include image_border(5px, 6px);
+  float: left;
+  height: 90px;
+  margin-right: 14px;
+  width: 219px;
+}
+
+.team_sequoia-values_container {
+  p {
+    margin: 0 0 15px;
+  }
+
+  @media(min-width: 960px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.team_sequoia-values_heading {
+  @include heading('15px /18px', $sub_heading_color);
+  margin: 0;
+}
+
+.team_sequoia-values_image {
+  @include container_box_shadow;
+  @include image_border(5px, 6px);
+  float: left;
+  height: 127px;
+  margin: 0 14px 14px 0;
+  width: 219px;
+}
+
+.team_sequoia-values_employees_wrap {
+  @include clear_fix;
+}
+
+.team_sequoia-values_column {
+  @media(min-width: 960px) {
+    width: 430px;
+  }
+}
+
+.team_sequoia-values_list {
+  @include container;
+  clear: both;
+  list-style-type: none;
+  margin: 10px 0 20px;
+  padding: 19px 19px 11px;
+
+  li {
+    @include heading('15px / 18px', $sub_heading_color);
+    padding-bottom: 14px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  @media(min-width: 960px) {
+    width: 458px;
+  }
+}

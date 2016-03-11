@@ -1,0 +1,25 @@
+.map {
+  background: image_url('img-map.png') no-repeat center 0;
+  clear: both;
+  height: 112px;
+  margin: 0 -25px;
+  position: relative;
+}
+
+.map-shadow_top {
+  background: image_url('bg-shadow-top.png') no-repeat 50% 0;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.map-shadow_bottom {
+  background: image_url('bg-shadow-bottom.png') no-repeat 50% 0;
+  bottom: 0;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
