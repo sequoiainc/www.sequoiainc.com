@@ -1,7 +1,5 @@
 exclude: [vendor]
 
-baseurl: /www.sequoiainc.com
-
 collections:
   careers:
     output: true
