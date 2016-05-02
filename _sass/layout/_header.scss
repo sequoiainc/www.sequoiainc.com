@@ -12,20 +12,30 @@ $layout_quick_links_color: #000;
 }
 
 .layout-logo {
-  background: image_url('main-logo-static.gif') no-repeat;
+  background-image: image_url('logo-Apr2016-v2.png');
+  background-repeat: no-repeat;
   display: block;
-  height: 120px;
+  height: 140px;
   margin: 0;
   order: 1;
   overflow: hidden;
   text-indent: -9999px;
-  width: 320px;
+  width: 180px;
+  background-size: contain;
 
   a {
     display: block;
     height: 100%;
     position: relative;
     z-index: 1;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    background-image: image_url('logo-Apr2016-v2@2x.png');
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    background-image: image_url('logo-Apr2016-v2@3x.png');
   }
 }
 
@@ -127,16 +137,12 @@ $layout_quick_links_color: #000;
 }
 
 .layout-best_places {
-  display: none;
+  display: block;
   order: 2;
   padding-right: 20px;
   padding-top: 28px;
 
-  @media (min-width: 445px) {
-    display: block;
-  }
-
-  @media (min-width: 748px) {
+  @media (min-width: 744px) {
     order: 3;
   }
 }
@@ -149,7 +155,7 @@ $layout_quick_links_color: #000;
   &:nth-child(1) {
     z-index: 4;
 
-    @media (min-width: 580px) and (max-width: 748px) {
+    @media (min-width: 580px) and (max-width: 743px) {
       margin-right: -35px;
     }
 
@@ -163,7 +169,7 @@ $layout_quick_links_color: #000;
     margin-right: -40px;
     z-index: 3;
 
-    @media (min-width: 580px) and (max-width: 748px) {
+    @media (min-width: 580px) and (max-width: 743px) {
       display: inline-block;
     }
 
@@ -177,7 +183,7 @@ $layout_quick_links_color: #000;
     margin-right: -40px;
     z-index: 2;
 
-    @media (min-width: 580px) and (max-width: 748px) {
+    @media (min-width: 580px) and (max-width: 743px) {
       display: inline-block;
     }
 
@@ -190,7 +196,7 @@ $layout_quick_links_color: #000;
     display: none;
     z-index: 1s;
 
-    @media (min-width: 580px) and (max-width: 748px) {
+    @media (min-width: 580px) and (max-width: 743px) {
       display: inline-block;
     }
 

@@ -8,14 +8,14 @@ jQuery(function($){
   initRandomImages();
   $('#layout-header_nav').okayNav();
 
-  $(".layout-logo").hover(
-    function() {
-      $(this).css("background-image", "url({{site.baseurl}}/assets/images/main-logo-swing.gif)");
-    },
-    function() {
-      $(this).css("background-image", "url({{site.baseurl}}/assets/images/main-logo-static.gif)");
-    }
-  );
+  // $(".layout-logo").hover(
+  //   function() {
+  //     $(this).css("background-image", "url({{site.baseurl}}/assets/images/main-logo-swing.gif)");
+  //   },
+  //   function() {
+  //     $(this).css("background-image", "url({{site.baseurl}}/assets/images/main-logo-static.gif)");
+  //   }
+  // );
 });
 
 /*!
