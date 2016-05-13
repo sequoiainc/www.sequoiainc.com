@@ -12,8 +12,7 @@ $layout_quick_links_color: #000;
 }
 
 .layout-logo {
-  background-image: image_url('logo-Apr2016-v2.png');
-  background-repeat: no-repeat;
+
   display: block;
   height: 140px;
   margin: 0;
@@ -21,21 +20,36 @@ $layout_quick_links_color: #000;
   overflow: hidden;
   text-indent: -9999px;
   width: 180px;
-  background-size: contain;
+
 
   a {
+    background-image: image_url('logo-Apr2016-v2.png');
+    background-repeat: no-repeat;
     display: block;
     height: 100%;
     position: relative;
     z-index: 1;
-  }
+    background-size: contain;
 
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
-    background-image: image_url('logo-Apr2016-v2@2x.png');
-  }
+    &:hover {
+      background-image: image_url('logo-Apr2016-v2-animated.gif');
+    }
 
-  @media only screen and (-webkit-min-device-pixel-ratio: 3) {
-    background-image: image_url('logo-Apr2016-v2@3x.png');
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+      background-image: image_url('logo-Apr2016-v2@2x.png');
+
+      &:hover {
+        background-image: image_url('logo-Apr2016-v2@2x.png');
+      }
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 3) {
+      background-image: image_url('logo-Apr2016-v2@3x.png');
+
+      &:hover {
+        background-image: image_url('logo-Apr2016-v2@3x.png');
+      }
+    }
   }
 }
 
