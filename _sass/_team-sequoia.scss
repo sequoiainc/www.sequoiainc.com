@@ -78,6 +78,17 @@ $team_sequoia_meet_employee_owned_heading_color: #776f64;
   width: 219px;
 }
 
+
+.c2s_image {
+  @include container_box_shadow;
+  @include image_border(5px, 6px);
+  float: right;
+  height: 210px;
+  margin: 0 14px 14px 0;
+  width: 210px;
+}
+
+
 .team_sequoia-values_employees_wrap {
   @include clear_fix;
 }
