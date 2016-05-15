@@ -81,10 +81,10 @@ $team_sequoia_meet_employee_owned_heading_color: #776f64;
 
 .c2s_image {
   @include container_box_shadow;
-  @include image_border(5px, 6px);
-  float: left;
+  @include image_border(4px, 4px);
+  float: right;
   height: 210px;
-  margin: 0 8px 8px 0;
+  margin: 0 10px 10px 0;
   width: 210px;
 }
 
