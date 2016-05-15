@@ -105,6 +105,14 @@ $team_sequoia_meet_employee_owned_heading_color: #776f64;
   list-style-type: none;
   margin: 10px 0 20px;
   padding: 19px 19px 11px;
+  
+  .c2s_list {
+  @include container;
+  clear: both;
+  list-style-type: none;
+  margin: 5px 0 5px;
+  padding: 5px 5px 5px;
+  
 
   li {
     @include heading('15px / 18px', $sub_heading_color);
