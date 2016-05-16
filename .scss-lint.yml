@@ -8,4 +8,4 @@ linters:
   NameFormat:
     convention: snake_case
   SelectorFormat:
-    convention: ^[a-z_]+\-?[a-z_]*$
+    convention: ^[a-z|\d_]+\-?[a-z_]*$

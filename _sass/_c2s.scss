@@ -1,0 +1,145 @@
+$c2s_about_content_background_color: #11934b;
+$c2s_about_content_foreground_color: #fff;
+$c2s_sub_heading_color: #8cc339;
+$c2s_focus_areas_background_color: #888;
+
+.c2s-wrap {
+  @include content_padding;
+}
+
+.c2s-heading_wrap {
+  @include heading_wrap;
+
+  + p {
+    margin-top: 0;
+  }
+}
+
+.c2s-heading {
+  @include heading_with_background('20px / 23px');
+}
+
+.c2s-header_wrap {
+  @media(min-width: 960px) {
+    display: flex;
+  }
+}
+
+.c2s-about {
+  @media(min-width: 960px) {
+    width: 60%;
+  }
+}
+
+.c2s-about_heading {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.c2s-about_content {
+  background-color: $c2s_about_content_background_color;
+  color: $c2s_about_content_foreground_color;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.c2s-logo_wrap {
+  @media(min-width: 960px) {
+    width: 40%;
+  }
+}
+
+.c2s-logo_image {
+  width: 100%;
+}
+
+.c2s-focus_areas_image_wrap {
+  background-image: url(#{$baseurl}/assets/images/scatter.jpg);
+  background-size: cover;
+
+  @media(min-width: 960px) {
+    width: 40%;
+  }
+}
+
+.c2s-focus_areas_wrap {
+  @media(min-width: 960px) {
+    display: flex;
+  }
+}
+
+.c2s-focus_areas_heading {
+  color: $c2s_sub_heading_color;
+}
+
+.c2s-about_image {
+  width: 100%;
+}
+
+.c2s-focus_areas {
+  background-color: $c2s_focus_areas_background_color;
+  color: $c2s_about_content_foreground_color;
+  padding: 20px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    padding: 10px 0;
+
+    &::before {
+      color: $c2s_sub_heading_color;
+      content: '\2014\00a0';
+    }
+  }
+
+  @media(min-width: 960px) {
+    width: 60%;
+  }
+}
+
+.c2s-details {
+  margin-bottom: 20px;
+
+  @media(min-width: 960px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.c2s-details_column {
+  ul {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  li {
+    list-style-type: none;
+    padding: 5px 0;
+    position: relative;
+
+    &::before {
+      color: $c2s_sub_heading_color;
+      content: '\2014\00a0';
+      left: -15px;
+      position: absolute;
+    }
+  }
+
+  @media(min-width: 960px) {
+    width: 48%;
+  }
+}
+
+.c2s-details_sub_heading {
+  color: $c2s_sub_heading_color;
+  margin: 0;
+  padding: 0;
+
+  + p {
+    margin-top: 0;
+  }
+}

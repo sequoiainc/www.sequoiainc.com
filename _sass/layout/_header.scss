@@ -14,6 +14,7 @@ $layout_quick_links_color: #000;
 .layout-logo {
   background-image: image_url('logo-Apr2016-v2.png');
   background-repeat: no-repeat;
+  background-size: contain;
   display: block;
   height: 140px;
   margin: 0;
@@ -21,7 +22,6 @@ $layout_quick_links_color: #000;
   overflow: hidden;
   text-indent: -9999px;
   width: 180px;
-  background-size: contain;
 
   a {
     display: block;
