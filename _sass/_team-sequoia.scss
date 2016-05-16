@@ -78,17 +78,6 @@ $team_sequoia_meet_employee_owned_heading_color: #776f64;
   width: 219px;
 }
 
-
-.c2s_image {
-  @include container_box_shadow;
-  @include image_border(4px, 4px);
-  float: right;
-  height: 210px;
-  margin: 0 8px 8px 0;
-  width: 210px;
-}
-
-
 .team_sequoia-values_employees_wrap {
   @include clear_fix;
 }
@@ -105,14 +94,6 @@ $team_sequoia_meet_employee_owned_heading_color: #776f64;
   list-style-type: none;
   margin: 10px 0 20px;
   padding: 19px 19px 11px;
-  
-  .c2s_list {
-  @include container;
-  clear: both;
-  list-style-type: none;
-  margin: 5px 0 5px;
-  padding: 5px 5px 5px;
-  
 
   li {
     @include heading('15px / 18px', $sub_heading_color);
