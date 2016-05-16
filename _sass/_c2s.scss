@@ -26,6 +26,8 @@ $c2s_focus_areas_background_color: #888;
 }
 
 .c2s-about {
+  margin-bottom: 20px;
+
   @media(min-width: 960px) {
     width: 60%;
   }
@@ -50,7 +52,12 @@ $c2s_focus_areas_background_color: #888;
 }
 
 .c2s-logo_image {
-  width: 100%;
+  display: none;
+
+  @media(min-width: 960px) {
+    display: block;
+    width: 100%;
+  }
 }
 
 .c2s-focus_areas_image_wrap {
