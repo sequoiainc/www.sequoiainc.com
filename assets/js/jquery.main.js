@@ -8,14 +8,16 @@ jQuery(function($){
   initRandomImages();
   $('#layout-header_nav').okayNav();
 
-  // $(".layout-logo").hover(
-  //   function() {
-  //     $(this).css("background-image", "url({{site.baseurl}}/assets/images/main-logo-swing.gif)");
-  //   },
-  //   function() {
-  //     $(this).css("background-image", "url({{site.baseurl}}/assets/images/main-logo-static.gif)");
-  //   }
-  // );
+  if (!window.devicePixelRatio || window.devicePixelRatio === 1) {
+    $(".layout-logo").hover(
+      function() {
+        $(this).css("background-image", "url({{site.baseurl}}/assets/images/1.gif)");
+      },
+      function() {
+        $(this).css("background-image", "url({{site.baseurl}}/assets/images/1.png)");
+      }
+    );
+  }
 });
 
 /*!
