@@ -60,6 +60,11 @@ $c2s_focus_areas_background_color: #888;
   }
 }
 
+.c2s-logo_amazon_image {
+  display: block;
+  margin: 0 auto 15px;
+}
+
 .c2s-focus_areas_image_wrap {
   background-image: url(#{$baseurl}/assets/images/scatter.jpg);
   background-size: cover;
