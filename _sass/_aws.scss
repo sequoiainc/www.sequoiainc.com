@@ -1,0 +1,162 @@
+$aws_about_content_background_color: #11934b;
+$aws_about_content_foreground_color: #fff;
+$aws_sub_heading_color: #8cc339;
+$aws_focus_areas_background_color: #888;
+
+.aws-wrap {
+  @include content_padding;
+}
+
+.aws-heading_wrap {
+  @include heading_wrap;
+
+  + p {
+    margin-top: 0;
+  }
+}
+
+.aws-heading {
+  @include heading_with_background('20px / 23px');
+}
+
+.aws-header_wrap {
+  @media(min-width: 960px) {
+    display: flex;
+  }
+}
+
+.aws-about {
+  margin-bottom: 20px;
+
+  @media(min-width: 960px) {
+    width: 60%;
+  }
+}
+
+.aws-about_heading {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.aws-about_content {
+  background-color: $aws_about_content_background_color;
+  color: $aws_about_content_foreground_color;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.aws-logo_wrap {
+  @media(min-width: 960px) {
+    width: 40%;
+  }
+}
+
+.aws-logo_image {
+  display: none;
+
+  @media(min-width: 960px) {
+    display: block;
+    margin-top: -36px;
+    width: 100%;
+  }
+}
+
+.aws-logo_amazon_image {
+  display: block;
+  margin: 0 auto 15px;
+
+  @media(min-width: 960px) {
+    margin-top: -15px;
+  }
+}
+
+.aws-focus_areas_image_wrap {
+  background-image: url(#{$baseurl}/assets/images/scatter.jpg);
+  background-size: cover;
+
+  @media(min-width: 960px) {
+    width: 40%;
+  }
+}
+
+.aws-focus_areas_wrap {
+  @media(min-width: 960px) {
+    display: flex;
+  }
+}
+
+.aws-focus_areas_heading {
+  color: $aws_sub_heading_color;
+}
+
+.aws-about_image {
+  width: 100%;
+}
+
+.aws-focus_areas {
+  background-color: $aws_focus_areas_background_color;
+  color: $aws_about_content_foreground_color;
+  padding: 20px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    padding: 10px 0;
+
+    &::before {
+      color: $aws_sub_heading_color;
+      content: '\2014\00a0';
+    }
+  }
+
+  @media(min-width: 960px) {
+    width: 60%;
+  }
+}
+
+.aws-details {
+  margin-bottom: 20px;
+
+  @media(min-width: 960px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.aws-details_column {
+  ul {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  li {
+    list-style-type: none;
+    padding: 5px 0;
+    position: relative;
+
+    &::before {
+      color: $aws_sub_heading_color;
+      content: '\2014\00a0';
+      left: -15px;
+      position: absolute;
+    }
+  }
+
+  @media(min-width: 960px) {
+    width: 48%;
+  }
+}
+
+.aws-details_sub_heading {
+  color: $aws_sub_heading_color;
+  margin: 0;
+  padding: 0;
+
+  + p {
+    margin-top: 0;
+  }
+}
