@@ -2,6 +2,7 @@
 www.sequoiainc.com site
 
 To add a new page:
+
 1. New File button
 * Copy existing file as template
 * create .scss file in _sass
