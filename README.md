@@ -3,7 +3,7 @@ www.sequoiainc.com site
 
 To add a new page:
 
-1. New File button
+1. "Create new File" button
 * Copy existing file as template
 * create .scss file in _sass
 * copy scss styles from existing scss template
