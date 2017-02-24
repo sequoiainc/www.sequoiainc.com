@@ -3,7 +3,7 @@ title: Sequoia Named to Washingtonian's 50 Great Places to Work List
 date: 2017-02-23
 ---
 
-Sequoia is very proud to announce that we were named one of the Top 50 Great Places to Work in the Washington DC area by Washingtonian Magazine.  Washingtonian's panel of editors reviewed nearly 200 companies with more than 8,000 employee surveys. This year's participants vary both by size and industry with companies ranging from information technology firms, government contractors, financial firms, nonprofit organizations and others around the D.C. area. 
+RESTON, VA – February 23, 2017: Sequoia Holdings, Inc., a leading provider of software development solutions to the U.S. Intelligence Community, today announced it was named one one of the Top 50 Great Places to Work in the Washington DC area by Washingtonian Magazine.  Washingtonian's panel of editors reviewed nearly 200 companies with more than 8,000 employee surveys. This year's participants vary both by size and industry with companies ranging from information technology firms, government contractors, financial firms, nonprofit organizations and others around the D.C. area. 
  
 “Singularly, the most important component of business success is the people driving the mission.” said T. Richard Stroupe, Jr., CEO, Sequoia Holdings, Inc. “Forming a collaborative and enjoyable work-life environment, that recognizes each employee’s specialty offerings, and maximizes their ability to perform at the highest level and grow their skills, experience, and expertise, is the foundation for Sequoia.  As an employee-owned organization, we believe growth of the person creates the growth of the company.  Success comes from concurrently, and intentionally, meeting all of these needs simultaneously.”
 
