@@ -1,5 +1,5 @@
 ---
-title: Sequoia named Top 50 Great Places to Work in the Washington DC
+title: Sequoia Named to Washingtonian's 50 Great Places to Work List
 date: 2017-02-23
 ---
 Sequoia is very proud to announce that we were named one of the Top 50 Great Places to Work in the Washington DC area by Washingtonian Magazine.  Washingtonian's panel of editors reviewed nearly 200 companies with more than 8,000 employee surveys. This year's participants vary both by size and industry with companies ranging from information technology firms, government contractors, financial firms, nonprofit organizations and others around the D.C. area. 
