@@ -16,4 +16,5 @@ For more information or to review our latest job opportunities please visit us a
 
 About Sequoia
 Sequoia is an award-winning, employee-owned provider of high-end software development and engineering services centered on improving the analytic, collection, collaboration and sharing of data.  Headquartered in Reston Virginia, Sequoia provides engineering and analytic solutions to the national security sector, including the US intelligence, defense and homeland security communities. 
+
 As a trusted, long-term partner, Sequoia works side by side with our clients, offering expert, objective software and systems development lifecycle advice and solutions to help solve their most important and complex problems. Our unique approach to developing innovative technology consulting solutions combines deep domain expertise with strong capabilities in strategy, analytics, technology and operations. Developing innovative solutions and investing in passionate technologists is our core mission, and we’re just getting started!
