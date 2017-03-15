@@ -2,71 +2,189 @@
 layout: default
 title: AWS
 ---
+
 <div class="aws-wrap">
-  <div class="aws-heading_wrap">
-    <h2 class="aws-heading">Sequoia Combine</h2>
-  </div>
-  <div class="aws-header_wrap">
-    <div class="aws-about">
-      <div class="aws-about_content">
-        <h1 class="aws-about_heading">About Sequoia Combine</h1>
-        <p>Sequoia Combine is an infrastructure automation tool that is used to provision, develop, maintain and manage AWS resources bound for secure "air-gapped" operational AWS Regions.  Combine provides a user-centric approach for C2S development, testing, accreditation and portability and operates with the sponsoring agency’s authorization. Combine drives massive cost savings by utilization proprietary infrastructure-as-code (IaC) techniques and delivers trust and interoperability </p>
-      </div>
-      <div class="aws-focus_areas_wrap">
-        <div class="aws-focus_areas_image_wrap">
-          <img src="{{ site.baseurl }}/assets/images/scatter.jpg" alt="image description"class="aws-about_image" />
-        </div>
-        <div class="aws-focus_areas">
-          <h2 class="aws-focus_areas_heading">COMBINE FOCUS AREAS</h2>
-          <ul>
-            <li>Validate against IC Baseline + CAP</li>
-            <li>Security & ICD 503 Accreditation</li>
-            <li>Remote Maintenance & Support</li>
-            <li>IC Bound Development & Deployment</li>
-            <li>Access to IC Cleared Support</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="aws-logo_wrap">
-      <img class="aws-logo_image" src="{{ site.baseurl }}/assets/images/Seq_Combine-Logo-XL.png" alt="" />
-      <img class="aws-logo_amazon_image" src="{{ site.baseurl }}/assets/images/logo-apn-consulting-small.png" width="200" height="86" alt="" />
-    </div>
-  </div>
-  <div class="aws-details">
-    <div class="aws-details_column">
-      <div class='aws-heading_wrap'>
-        <h2 class="aws-heading">C2S / AWS IC Marketplace Transition</h2>
-      </div>
-      <p>To help improve our customer’s experience with the AWS C2S Region, Sequoia developers embarked on developing Combine.  Using Combine, Sequoia developers, devops and security engineers programmatically create, control and update AWS C2S environments, using infrastructure-as-code (IaC) techniques to provide advancement in velocity, precision and repeatability.</p>
-      <h3 class="aws-details_sub_heading">Velocity</h3>
-      <p> Combine enables iterative design and development for quick deployment without the need for cleared personnel or time consuming resources on a cleared network.</p>
-      <h3 class="aws-details_sub_heading">Precision</h3>
-      <p>Combine provides a standardized “FedRamp” approach for qualification tasks such as operational testing, security assessment and continuous support.</p>
-      <h3 class="aws-details_sub_heading">Repeatability</h3>
-      <p>Combine is continuously updated by Sequoia’s AWS experts with on-site / hands-on C2S experience.</p>
-    <div class='aws-heading_wrap'>
-        <h2 class="aws-heading">Sequoia Combine Demo</h2>
-     <p>Interested in Combine? Click here for our online <a href="https://vimeo.com/190448496">demo</a>.  If you'd like a live demo that is customized to your business, please let us know.</p>
-      </div>
-    </div>
-    <div class="aws-details_column">
-      <div class='aws-heading_wrap'>
-        <h2 class="aws-heading">C2S Security Accreditation</h2>
-      </div>
-      <p>Sequoia certified AWS experts have been engaged with C2S from its beginning and understand its unique configuration.  Our AWS experts can assist with vulnerability scanning and provide risk assessment, mitigation techniques and design recommendations to meet specific security requirements. Combine provides a consistent assessment and authorization baseline for IC bound ISV products & solutions – ICD 503 accreditation</p>
-      <div class='aws-heading_wrap'>
-        <h2 class="aws-heading">Sequoia Combine Tech Specs</h2>
-      </div>
-      <ul>
-        <li>Full Certificate Authority chain used to emulate IC customer's security environment.</li>
-        <li>Token based authentication through "TAP" (Temporary Access Protocol) server enables login access to certificate bearers and API access</li>
-        <li>Access Policy issued by TAP restricts users and systems to only those services that are available in the customer's environment</li>
-        <li>Base AMI built on a minimal CentOS install with customer specific security lock-downs</li>
-        <li><a href="https://blogs.sequoiainc.com/sequoia-combine-technical-overview/">Best practices</a> applied to networking design, resource tagging, and architecture</li>
-      </ul>
-    </div>
-  </div>
+	<div class="row">
+		<div class="col-sm-12 aws-banner">
+			<h2 class="header-text">
+				Sequoia Combine
+			</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8 aws-about no-left-pad">
+			<div class="aws-about_content">
+				<h1 class="aws-about_heading">
+					About Sequoia Combine
+				</h1>
+				<p>
+					To help improve our customer’s experience with the AWS C2S Region, Sequoia developers embarked on developing Combine.
+				</p>
+				<p>
+					Sequoia Combine is an infrastructure automation tool that is used to provision, develop, maintain and manage AWS resources bound for secure "air-gapped" operational AWS Regions.
+				</p>
+				<p>
+					Using Combine, Sequoia developers, devops and security engineers programmatically create, control and update AWS C2S environments, using infrastructure-as-code (IaC) techniques to provide advancement in velocity, precision and repeatability.
+				</p>
+			</div>
+		</div>
+		<div class="col-sm-4 aws-logo_wrap">
+			<img alt="" class="aws-logo_image" src="{{ site.baseurl }}/assets/images/Seq_Combine-Logo-XL.png">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 aws-icon-column">
+			<h4>
+				Streamlines C2S &amp; AWS IC Marketplace Transition &amp; Accreditation
+			</h4>
+			<div class="aws-icon-column-container">
+				<div class="aws-icon-column-image">
+					<img src="{{ site.baseurl }}/assets/images/1488539511_arrow-bolt-lightning.png">
+				</div>
+				<div class="aws-icon-column-text">
+					<p>
+						Combine enables iterative design and development for quick deployment without the need for cleared personnel or time consuming resources on a cleared network.
+					</p>
+				</div>
+			</div>
+			<div class="aws-icon-column-container">
+				<div class="aws-icon-column-image">
+					<img src="{{ site.baseurl }}/assets/images/1488539678_28_-_Goal.png">
+				</div>
+				<div class="aws-icon-column-text">
+					<p>
+						Combine provides a standardized “FedRamp” approach for qualification tasks such as operational testing, security assessment and continuous support.
+					</p>
+				</div>
+			</div>
+			<div class="aws-icon-column-container">
+				<div class="aws-icon-column-image">
+					<img src="{{ site.baseurl }}/assets/images/1488539804_REPEAT.png">
+				</div>
+				<div class="aws-icon-column-text">
+					<p>
+						Combine is continuously updated by Sequoia’s AWS experts with on-site / hands- on C2S experience.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<h4>
+				Combine Delivers Trust &amp; Interoperability
+			</h4>
+			<div class="aws-icon-column-container">
+				<div class="aws-icon-column-image">
+					<img src="{{ site.baseurl }}/assets/images/1488367061_money.png">
+				</div>
+				<div class="aws-icon-column-text">
+					<p>
+						Drives massive cost savings by deploying infrastructure-as-code (IaC) techniques with direct access to customer organizations &amp; C2S
+					</p>
+				</div>
+			</div>
+			<div class="aws-icon-column-container">
+				<div class="aws-icon-column-image">
+					<img src="{{ site.baseurl }}/assets/images/Lock.png">
+				</div>
+				<div class="aws-icon-column-text">
+					<p>
+						Provides consistent risk assessment, mitigation techniques and design recommendations to meet specific security compliance and risk management requirements e.g. ICD 503
+					</p>
+				</div>
+			</div>
+			<div class="aws-icon-column-container">
+				<div class="aws-icon-column-image">
+					<img src="{{ site.baseurl }}/assets/images/Tech.png">
+				</div>
+				<div class="aws-icon-column-text">
+					<p>
+						Blending proprietary tech and unique customer authentication specifications and operates with the sponsoring agency’s authorization
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<hr>
+	</div>
+	<div class="row aws-icon-spread">
+		<div class="col-xs-6 col-sm-3 col-md-2">
+			<div class="aws-icon-spread-column">
+				<div class="aws-icon-spread-image">
+					<img src="{{ site.baseurl }}/assets/images/handshake.png">
+				</div>
+				<div class="aws-icon-spread-text">
+					<p>
+						De facto partnership between participating entities
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-3 col-md-2">
+			<div class="aws-icon-spread-column">
+				<div class="aws-icon-spread-image">
+					<img src="{{ site.baseurl }}/assets/images/chem.png">
+				</div>
+				<div class="aws-icon-spread-text">
+					<p>
+						Accelerates time
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-3 col-md-2">
+			<div class="aws-icon-spread-column">
+				<div class="aws-icon-spread-image">
+					<img src="{{ site.baseurl }}/assets/images/controls.png">
+				</div>
+				<div class="aws-icon-spread-text">
+					<p>
+						Provides a standardized “FedRamp” approach
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-3 col-md-2">
+			<div class="aws-icon-spread-column">
+				<div class="aws-icon-spread-image">
+					<img src="{{ site.baseurl }}/assets/images/wifi.png">
+				</div>
+				<div class="aws-icon-spread-text">
+					<p>
+						Improves demographic coverage
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-3 col-md-2">
+      <div class="aws-icon-spread-column">
+				<div class="aws-icon-spread-image">
+					<img src="{{ site.baseurl }}/assets/images/people.png">
+				</div>
+				<div class="aws-icon-spread-text">
+					<p>
+						Provides access to IC Cleared Professionals
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-3 col-md-2">
+      <div class="aws-icon-spread-column">
+				<div class="aws-icon-spread-image">
+					<img src="{{ site.baseurl }}/assets/images/document.png">
+				</div>
+				<div class="aws-icon-spread-text">
+					<p>
+						Empowers organizations
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<hr>
+</div>
+
   <div class="contact_us-heading_wrap">
     <h2 class="contact_us-heading">Sequoia Combine Enrollment</h2>
   </div>
