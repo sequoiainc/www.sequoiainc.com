@@ -73,6 +73,80 @@ a {
   text-decoration: none;
 }
 
+
+//colors
+$white: white;
+
+//urls
+$url_0: url({{ site.baseurl }}/assets/images/Seq_SeqCombine-Cover_Background-BW.jpg);
+
+.no-left-pad {
+  padding-left: 0;
+}
+.aws-icon-column {
+  h4 {
+    letter-spacing: -1px;
+  }
+  div.aws-icon-column-container {
+    display: flex;
+    div {
+      &.icon-column-image {
+        height: 85px;
+        padding-right: 10px;
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+      &.icon-column-text {
+        margin: auto;
+        p {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+.aws-icon-spread {
+  margin-top: -16px;
+  .aws-icon-spread-column {
+    text-align: center;
+    .aws-icon-spread-image {
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .aws-icon-spread-text {
+      margin: auto;
+      p {
+        margin: auto;
+      }
+    }
+  }
+}
+.aws-logo_wrap {
+  display: inline-block;
+  position: relative;
+}
+div.aws-banner {
+  margin-top: 20px;
+  width: 100%;
+  height: 210px;
+  background: $url_0;
+  margin-bottom: 10px;
+  .header-text {
+    color: $white;
+    height: 210px;
+    line-height: 210px;
+    margin: auto;
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
+
 @import 'mixins';
 @import 'okayNav';
 @import 'map';
